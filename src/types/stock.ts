@@ -1,4 +1,4 @@
-import { z } from "zod"
+import { z } from "zod";
 
 export const stockSchema = z.object({
 	id: z.string().uuid(),
@@ -7,6 +7,6 @@ export const stockSchema = z.object({
 	price: z.number().min(0, "Price must be a positive number"),
 	isActive: z.boolean().default(true),
 	createdAt: z.date().default(() => new Date()),
-})
+});
 
-export type Stock = z.infer<typeof stockSchema>
+export type Stock = z.infer<typeof stockSchema>;

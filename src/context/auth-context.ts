@@ -1,5 +1,5 @@
-import { writable } from 'svelte/store';
-import type { AuthContext as AuthContextType } from '../types/auth';
+import { writable } from "svelte/store";
+import type { AuthContext as AuthContextType } from "../types/auth";
 
 function createAuthContext() {
 	const { subscribe, update, set } = writable<AuthContextType>({
@@ -21,7 +21,7 @@ function createAuthContext() {
 		},
 		setUsername: (value: string | null) => {
 			update((ctx) => ({ ...ctx, username: value }));
-		}
+		},
 	};
 }
 

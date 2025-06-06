@@ -1,4 +1,4 @@
-import { z } from "zod"
+import { z } from "zod";
 
 export const customerSchema = z.object({
 	id: z.string().uuid(),
@@ -9,6 +9,6 @@ export const customerSchema = z.object({
 	address: z.string().optional(),
 	isActive: z.boolean().default(true),
 	createdAt: z.date().default(() => new Date()),
-})
+});
 
-export type Customer = z.infer<typeof customerSchema>
+export type Customer = z.infer<typeof customerSchema>;

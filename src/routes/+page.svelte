@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { AuthServices } from "../services/auth-services";
+import { AuthServices } from "../services/auth-services";
 
-  const authServices = new AuthServices();
+const authServices = new AuthServices();
 </script>
 
 <h1>Welcome to SvelteKit</h1>
